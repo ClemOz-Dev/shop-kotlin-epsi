@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/logo_epsi"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shopkotlin">
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,8 +20,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
