@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         buttonZone2.setOnClickListener(View.OnClickListener {
-            val newIntent= Intent(application,StudentsActivity::class.java)
+            val newIntent= Intent(application,ShopActivity::class.java)
             newIntent.putExtra("title",getString(R.string.zone_2))
             startActivity(newIntent)
         })
