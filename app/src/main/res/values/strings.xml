@@ -2,4 +2,7 @@
     <string name="app_name">shop-kotlin</string>
     <string name="zone_1">Students</string>
     <string name="zone_2">Shop</string>
+    <string name="student_1">Benjamin</string>
+    <string name="student_2">Sofiane</string>
+    <string name="student_3">Clement</string>
 </resources>
