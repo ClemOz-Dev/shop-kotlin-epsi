@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">shop-kotlin</string>
-    <string name="zone_1">zone 1</string>
-    <string name="zone_2">zone 2</string>
+    <string name="zone_1">Students</string>
+    <string name="zone_2">Shop</string>
 </resources>
