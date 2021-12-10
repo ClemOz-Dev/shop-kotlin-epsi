@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Shopkotlin">
         <activity
+            android:name=".ShopActivity"
+            android:exported="false" />
+        <activity
             android:name=".SingleStudentActivity"
             android:exported="false" />
         <activity
