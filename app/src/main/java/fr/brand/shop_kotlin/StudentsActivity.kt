@@ -48,6 +48,7 @@ class StudentsActivity : BaseActivity() {
             val student = Student(firstname = firstname, lastname = lastname, email = email, imgUrl = picture_url, group = group)
             students.add(student)
         }
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_students)
         val buttonStudent1: Button = findViewById(R.id.buttonStudent1)
