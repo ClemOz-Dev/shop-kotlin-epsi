@@ -11,6 +11,7 @@ class SingleStudentActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_single_student)
         intent.getStringExtra("title")?.let { setHeaderTitle(it) }
+        showBtnBack()
         val currentStudent = intent.getSerializableExtra("current_student") as Student?
 
         val imageViewStudent = findViewById<ImageView>(R.id.imageViewStudent)
