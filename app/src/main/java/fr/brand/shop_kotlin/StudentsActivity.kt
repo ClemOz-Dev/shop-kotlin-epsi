@@ -51,6 +51,7 @@ class StudentsActivity : BaseActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_students)
+        setHeaderTitle("Noms")
         val buttonStudent1: Button = findViewById(R.id.buttonStudent1)
         val buttonStudent2: Button = findViewById(R.id.buttonStudent2)
         val buttonStudent3: Button = findViewById(R.id.buttonStudent3)
