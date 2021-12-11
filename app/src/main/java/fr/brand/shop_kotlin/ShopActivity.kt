@@ -13,6 +13,8 @@ class ShopActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shop)
+        setHeaderTitle("Rayons")
+        showBtnBack()
 
         val categories = arrayListOf<Category>()
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewCategories)
