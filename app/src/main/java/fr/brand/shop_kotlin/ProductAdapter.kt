@@ -1,5 +1,7 @@
 package fr.brand.shop_kotlin
 
+import android.app.Activity
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -36,11 +38,12 @@ class ProductAdapter  (private val products: ArrayList<Product>): RecyclerView.A
         Picasso.get().load(currentProduct.picture_url).into(holder.imageViewProductCard)
 
         holder.contentLayout.setOnClickListener(View.OnClickListener {
-            // val newIntent= Intent(application,DetailActivity::class.java)
-            // newIntent.putExtra("title",getString(R.string.txt_home_nature))
-            //  intent.putExtra('category_url', currentCategory.products_url)
-            //  startActivity(newIntent)
-            Log.d("Clic :","${currentProduct.name}")
+            val activity = holder.itemView.context as Activity
+            val newIntent= Intent(activity, SingleProductActivity::class.java)
+            newIntent.putExtra("name",currentProduct.name)
+            newIntent.putExtra("description",currentProduct.description)
+            newIntent.putExtra("picture_url", currentProduct.picture_url)
+            activity.startActivity(newIntent)
         })
         /*
         holder.contentLayout.setOnClickListener(View.OnClickListener {
