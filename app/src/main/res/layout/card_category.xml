@@ -5,13 +5,23 @@
     android:layout_height="wrap_content">
     <LinearLayout
         android:id="@+id/contentLayout"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
-            <TextView
-                android:id="@+id/textViewCategoryTitle"
-                android:gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content">
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="30sp" />
+            <TextView
+                android:background="@drawable/back"
+                android:padding="10sp"
+                android:id="@+id/textViewCategoryTitle"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+ 
     </LinearLayout>
+
 </LinearLayout>

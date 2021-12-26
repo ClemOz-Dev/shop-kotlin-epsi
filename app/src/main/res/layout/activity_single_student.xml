@@ -2,48 +2,67 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"  >
 
     <include
     layout="@layout/layout_header"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
-    <ImageView
-        android:id="@+id/imageViewStudent"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_width="300sp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-        <TextView
-            style="@style/TextViewCenter"
-            android:id="@+id/textViewFirstName"
+        android:layout_gravity="center_vertical|center_horizontal" >
+        <ImageView
+            android:id="@+id/imageViewStudent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="200dp"/>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/TextViewCenter"
+                android:padding="10dp"
+                android:id="@+id/textViewFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/TextViewCenter"
+                android:padding="10dp"
+                android:id="@+id/textViewLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_weight="1"/>
+        </LinearLayout>
         <TextView
+            android:id="@+id/textViewEmail"
             style="@style/TextViewCenter"
-            android:id="@+id/textViewLastName"
+            android:padding="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textViewGroup"
+            android:padding="10dp"
+            style="@style/TextViewCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
+        <TextView
+            android:id="@+id/textViewLinkEpsi"
+            style="@style/TextViewCenter"
+            android:autoLink="web"
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:text="http://www.epsi.fr"/>
     </LinearLayout>
-    <TextView
-        android:id="@+id/textViewEmail"
-        style="@style/TextViewCenter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/textViewGroup"
-        style="@style/TextViewCenter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/textViewLinkEpsi"
-        style="@style/TextViewCenter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="http://www.epsi.fr"/>
+
 </LinearLayout>

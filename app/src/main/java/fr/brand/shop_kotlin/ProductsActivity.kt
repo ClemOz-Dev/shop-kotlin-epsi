@@ -1,29 +1,34 @@
 package fr.brand.shop_kotlin
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import okhttp3.*
 import org.json.JSONObject
 import java.io.IOException
 
-class ShopActivity : BaseActivity() {
+class ProductsActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_shop)
+        setContentView(R.layout.activity_products)
         showBtnBack()
-        setHeaderTitle("Rayons")
-        val categories = arrayListOf<Category>()
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewCategories)
+        val i = intent
+        i.getStringExtra("title")?.let { setHeaderTitle(it) }
+        val productsUrl = i.getStringExtra("productsUrl")
+
+        val products = arrayListOf<Product>()
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewProducts)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        val categoryAdapter = CategoryAdapter(categories)
-        recyclerView.adapter = categoryAdapter
+        val productsAdapter = ProductAdapter(products)
+        recyclerView.adapter = productsAdapter
 
         val okHttpClient: OkHttpClient = OkHttpClient.Builder().build()
-        val mRequestURL ="https://djemam.com/epsi/categories.json"
+        val mRequestURL = productsUrl
         val request = Request.Builder()
-            .url(mRequestURL)
+            .url(mRequestURL.toString())
             .get()
             .cacheControl(CacheControl.FORCE_NETWORK)
             .build()
@@ -37,19 +42,19 @@ class ShopActivity : BaseActivity() {
             override fun onResponse(call: Call, response: Response) {
                 val data = response.body?.string()
                 if(data !=null){
-                    // Log.d("Data","${data}")
+                    Log.d("Data","${data}")
                     val jsOb= JSONObject(data)
                     val jsArray =jsOb.getJSONArray("items")
                     for(i in 0 until jsArray.length()){
-                        val jsCategory = jsArray.getJSONObject(i)
-                        val title =jsCategory.optString("title","")
-                        val categoryId =jsCategory.optString("category_id","")
-                        val productsUrl =jsCategory.optString("products_url","")
-                        val category = Category(title = title, category_id = categoryId, products_url = productsUrl)
-                        categories.add(category)
+                        val jsProducts = jsArray.getJSONObject(i)
+                        val name =jsProducts.optString("name","")
+                        val description =jsProducts.optString("description","")
+                        val pictureUrl =jsProducts.optString("picture_url","")
+                        val product = Product(name = name, description = description, picture_url = pictureUrl)
+                        products.add(product)
                     }
                     runOnUiThread(Runnable {
-                        categoryAdapter.notifyDataSetChanged()
+                        productsAdapter.notifyDataSetChanged()
                     })
                 }
             }

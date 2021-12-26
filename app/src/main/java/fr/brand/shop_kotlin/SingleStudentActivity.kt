@@ -10,11 +10,13 @@ class SingleStudentActivity : BaseActivity() {
         val i = intent
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_single_student)
-        intent.getStringExtra("title")?.let { setHeaderTitle(it) }
-        val currentStudent = intent.getSerializableExtra("current_student") as Student?
+        showBtnBack()
+        i.getStringExtra("title")?.let { setHeaderTitle(it) }
+        val currentStudent = i.getSerializableExtra("current_student") as Student?
 
         val imageViewStudent = findViewById<ImageView>(R.id.imageViewStudent)
-        Picasso.get().load(currentStudent?.imgUrl).into(imageViewStudent)
+        Picasso.get().load(currentStudent?.img_url).into(imageViewStudent)
+
 
         val textViewFirstName = findViewById<TextView>(R.id.textViewFirstName)
         textViewFirstName.text = currentStudent?.firstname
@@ -23,9 +25,10 @@ class SingleStudentActivity : BaseActivity() {
         textViewLastName.text = currentStudent?.lastname
 
         val textViewEmail = findViewById<TextView>(R.id.textViewEmail)
-        textViewEmail.text = currentStudent?.firstname
+        textViewEmail.text = currentStudent?.email
 
         val textViewGroup = findViewById<TextView>(R.id.textViewGroup)
-        textViewGroup.text = currentStudent?.firstname
+        textViewGroup.text = currentStudent?.group
+
     }
 }
