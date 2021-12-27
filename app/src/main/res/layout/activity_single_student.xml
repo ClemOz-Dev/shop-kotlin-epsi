@@ -13,11 +13,12 @@
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal" >
+
         <ImageView
             android:id="@+id/imageViewStudent"
             android:layout_gravity="center_vertical|center_horizontal"
             android:layout_width="150dp"
-            android:layout_height="200dp"/>
+            android:layout_height="200dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:textColor="@color/claire_texte"/>
             <TextView
                 style="@style/TextViewCenter"
                 android:padding="10dp"
@@ -37,7 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:textColor="@color/claire_texte"/>
         </LinearLayout>
         <TextView
             android:id="@+id/textViewEmail"
@@ -45,13 +48,15 @@
             android:padding="10dp"
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/claire_texte"/>
         <TextView
             android:id="@+id/textViewGroup"
             android:padding="10dp"
             style="@style/TextViewCenter"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/claire_texte"/>
         <Space
             android:layout_width="match_parent"
             android:layout_height="30sp" />
@@ -62,7 +67,8 @@
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="http://www.epsi.fr"/>
+            android:text="http://www.epsi.fr"
+            android:textColor="@color/claire_texte"/>
     </LinearLayout>
 
 </LinearLayout>

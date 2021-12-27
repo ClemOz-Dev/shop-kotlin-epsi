@@ -23,14 +23,15 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/bleu_gris"
             android:text="@string/zone_1"
-            android:textColor="@color/white" />
+            android:textColor="@color/claire_texte" />
 
         <Button
             android:id="@+id/buttonZone2"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
-            android:text="@string/zone_2" />
+            android:text="@string/zone_2"
+            android:textColor="@color/claire_texte"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"

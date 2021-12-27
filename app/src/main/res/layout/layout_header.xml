@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@android:color/holo_red_light">
+        android:background="@color/gris_b">
 
         <ImageView
             android:id="@+id/imageViewBack"
@@ -16,15 +16,15 @@
             android:visibility="gone"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
-            app:srcCompat="@drawable/icon_back" />
+            app:srcCompat="@drawable/pngegg" />
 
         <TextView
             android:id="@+id/textViewTitle"
-            android:text="Epsi"
-            android:textColor="@color/white"
-            android:textSize="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:text="Epsi"
+            android:textColor="@color/claire_texte"
+            android:textSize="30sp" />
     </RelativeLayout>
 </LinearLayout>
