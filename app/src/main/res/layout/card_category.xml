@@ -11,14 +11,14 @@
         android:layout_height="wrap_content">
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="30sp" />
+                android:layout_height="50sp" />
             <TextView
-                android:background="@drawable/back"
                 android:padding="10sp"
                 android:id="@+id/textViewCategoryTitle"
-                android:textColor="@color/black"
+                android:background="@drawable/bouton"
+                android:textColor="@color/white"
                 android:gravity="center"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"/>
  

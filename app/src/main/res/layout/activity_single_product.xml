@@ -24,6 +24,7 @@
         <TextView
             android:id="@+id/TextViewSingleProductDescription"
             style="@style/TextViewCenter"
+            android:background="@drawable/customborder"
             android:autoLink="web"
             android:clickable="true"
             android:layout_width="match_parent"

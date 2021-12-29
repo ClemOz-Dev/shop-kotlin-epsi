@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/drawable/back.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/drawable/bouton.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/drawable/customborder.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/layout/activity_products.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/layout/activity_shop.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/layout/activity_single_product.xml" value="0.264" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/layout/activity_single_student.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/layout/activity_splash.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/shop-kotlin-epsi/app/src/main/res/layout/card_product.xml" value="0.2" />
         <entry key="..\:/sofiane dev/dev_clem/shop-kotlin-epsi/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/sofiane_dev/dev_mobile/shop-kotlin-epsi/app/src/main/res/drawable/back.xml" value="0.14375" />
         <entry key="..\:/sofiane_dev/dev_mobile/shop-kotlin-epsi/app/src/main/res/layout/activity_main.xml" value="0.12760416666666666" />

@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/imageViewProductCard"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_weight="1" />
 
         <LinearLayout
@@ -30,10 +30,10 @@
                 android:id="@+id/textViewProductCardName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/back"
+                android:background="@color/bleu_gris"
                 android:gravity="center"
                 android:padding="10sp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
             <TextView
                 android:id="@+id/textViewProductCardDescription"
